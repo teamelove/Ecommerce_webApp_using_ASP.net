@@ -11,7 +11,7 @@
     <div class="card-header">
         <i class="fas fa-table"></i>
         Product
-        <a href="../Admin/AddCategory" class="btn btn-info  pull-right fa fa-plus">Add New</a>
+        <a href="../Admin/ProductAdd" class="btn btn-info  pull-right fa fa-plus">Add New</a>
     </div>
     <div class="card-body">
         <div class="table-responsive">
@@ -38,7 +38,11 @@
                         <tr>
                             <td>@count</td>
                             <td>@item.ProductName</td>
-                            <td><a href="#">Edit</a></td>
+                            <td>
+
+                                @Html.ActionLink("Edit", "ProductEdit", new { productId = item.ProductId })
+ 
+                            </td>
 
                         </tr>
                     }

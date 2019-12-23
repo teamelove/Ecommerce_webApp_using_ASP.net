@@ -220,6 +220,7 @@
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\CategoryDetail.cs" />
+    <Compile Include="Models\Home\HomeIndexViewModel.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\Shopping.cs" />
@@ -238,8 +239,10 @@
     <Content Include="AdminStyle\js\demo\datatables-demo.js" />
     <Content Include="AdminStyle\js\sb-admin.js" />
     <Content Include="AdminStyle\js\sb-admin.min.js" />
-    <Content Include="AdminStyle\vendor\bootstrap\css\bootstrap-theme.css" />
-    <Content Include="AdminStyle\vendor\bootstrap\css\bootstrap-theme.min.css" />
+    <Content Include="AdminStyle\vendor\bootstrap\css\bootstrap-grid.css" />
+    <Content Include="AdminStyle\vendor\bootstrap\css\bootstrap-grid.min.css" />
+    <Content Include="AdminStyle\vendor\bootstrap\css\bootstrap-reboot.css" />
+    <Content Include="AdminStyle\vendor\bootstrap\css\bootstrap-reboot.min.css" />
     <Content Include="AdminStyle\vendor\bootstrap\css\bootstrap.css" />
     <Content Include="AdminStyle\vendor\bootstrap\css\bootstrap.min.css" />
     <Content Include="AdminStyle\vendor\bootstrap\js\bootstrap.bundle.js" />
@@ -2024,8 +2027,10 @@
     <Content Include="AdminStyle\vendor\fontawesome-free\webfonts\fa-solid-900.woff2" />
     <Content Include="AdminStyle\vendor\jquery\jquery.min.map" />
     <Content Include="AdminStyle\vendor\jquery\jquery.slim.min.map" />
-    <Content Include="AdminStyle\vendor\bootstrap\css\bootstrap-theme.css.map" />
-    <Content Include="AdminStyle\vendor\bootstrap\css\bootstrap-theme.min.css.map" />
+    <Content Include="AdminStyle\vendor\bootstrap\css\bootstrap-grid.css.map" />
+    <Content Include="AdminStyle\vendor\bootstrap\css\bootstrap-grid.min.css.map" />
+    <Content Include="AdminStyle\vendor\bootstrap\css\bootstrap-reboot.css.map" />
+    <Content Include="AdminStyle\vendor\bootstrap\css\bootstrap-reboot.min.css.map" />
     <Content Include="AdminStyle\vendor\bootstrap\css\bootstrap.css.map" />
     <Content Include="AdminStyle\vendor\bootstrap\css\bootstrap.min.css.map" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
@@ -2080,8 +2085,13 @@
     <Content Include="Views\Admin\Categories.cshtml" />
     <Content Include="Views\Admin\UpdateCategory.cshtml" />
     <Content Include="Views\Admin\Product.cshtml" />
+    <Content Include="Views\Admin\ProductEdit.cshtml" />
+    <Content Include="Views\Admin\ProductAdd.cshtml" />
+    <Content Include="Views\Admin\CategoryEdit.cshtml" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="ProductImg\" />
+  </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

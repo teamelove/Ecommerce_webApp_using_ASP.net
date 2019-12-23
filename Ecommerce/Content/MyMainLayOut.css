@@ -189,7 +189,7 @@ h6{
     width: 100%;
 }
 .olSearch .inputComn{
-    margin-bottom:0;
+    margin-bottom: 0;
 }
 .inputComn {
     color: black;
@@ -201,17 +201,20 @@ h6{
 }
  .searchIcon{
     position: absolute;
-    top:0;
+    top: 0;
+    right: 0;
 
 }
-.searchBtn{ 
+.searchBtn {
     background-color: #005faa;
     border: 0 none;
     color: #fff;
     font-size: 16px;
+    padding: 11px 16px;
     text-transform: uppercase;
     cursor: pointer;
     height: 44px;
+    
 }
    .searchBtn:hover {
     background-color:#326987;

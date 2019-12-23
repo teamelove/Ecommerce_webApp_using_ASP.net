@@ -1,16 +1,22 @@
-﻿using System;
+﻿using Ecommerce.Models;
+using Ecommerce.Models.Home;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using Ecommerce.DAL;
+using Ecommerce.Repository;
 using System.Web.Mvc;
+using Newtonsoft.Json;
 
 namespace Ecommerce.Controllers
 {
     public class HomeController : Controller
     {
-        public ActionResult Index()
+        public ActionResult Index(string search)
         {
-            return View();
+            HomeIndexViewModel model = new HomeIndexViewModel();
+            return View(model.CreateModel(search));
         }
 
         public ActionResult About()
